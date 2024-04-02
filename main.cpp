@@ -35,10 +35,10 @@ int main(){
     }
     for (int i = 0; i < 3; i++)
     {
-        cout << "\n nim : " << mhs.nim;
-        cout << "\n nama : " << mhs.nama;
-        cout << "\n alamat : " << mhs.alamat.desa;
-        cout << "\n alamat : " << mhs.alamat.kota;
-        cout << "\n umur : " << mhs.umur;
+        cout << "\n nim : " << mhs[i].nim << endl;
+        cout << "\n nama : " << mhs[i].nama << endl;
+        cout << "\n alamat : " << mhs[1].alamat.desa;
+        cout << "\n alamat : " << mhs[i].alamat.kota;
+        cout << "\n umur : " << mhs[i].umur;
     }
 }
