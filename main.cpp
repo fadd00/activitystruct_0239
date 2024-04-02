@@ -2,15 +2,11 @@
 #include<string>
 
 using namespace std;
-
-struct DetailAlamat
-{
+struct DetailAlamat{
     string desa;
     string kota;
 };
-
-struct Mahasiswa
-{
+struct Mahasiswa{
     string nim;
     string nama;
     DetailAlamat alamat;
@@ -18,8 +14,7 @@ struct Mahasiswa
 };
 int main(){
     Mahasiswa mhs[3];
-    for (int i = 0; i < 3; i++)
-    {
+    for (int i = 0; i < 3; i++){
         cout << "nomor mahasiswa : ";
         getline(cin, mhs[i].nim);
         cout << "nama mahasiswa : ";
@@ -32,9 +27,7 @@ int main(){
         cout << "umur mahasiswa : ";
         cin >> mhs[i].umur;
         cout << endl;
-    }
-    for (int i = 0; i < 3; i++)
-    {
+    }for (int i = 0; i < 3; i++){
         cout << "\n nim : " << mhs[i].nim << endl;
         cout << "\n nama : " << mhs[i].nama << endl;
         cout << "\n alamat : " << mhs[1].alamat.desa;
